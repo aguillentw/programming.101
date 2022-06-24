@@ -1,0 +1,32 @@
+plugins {
+    id 'application'
+    id 'groovy'
+}
+
+group 'com.tesco.ddd'
+version '1.0-SNAPSHOT'
+
+ext {
+    javaMainClass = "com.tesco.ddd.application.Application"
+}
+
+application {
+    mainClass = javaMainClass
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy:3.0.10'
+    testImplementation platform("org.spockframework:spock-bom:2.1-groovy-3.0")
+    testImplementation "org.spockframework:spock-core"
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
