@@ -6,13 +6,27 @@ class ProductSpec extends Specification {
 
     def "should accept a product name to create a Product"() {
         given:
-        def inputProductName = "Apple iPencil"
-        Product applePencilProduct = new Product(inputProductName)
+        def inputBrand = "Apple"
+        def inputProductName = "iPencil"
+        Product applePencilProduct = new Product(inputBrand, inputProductName)
 
         when:
         def actualProductName = applePencilProduct.getName()
 
         then:
         actualProductName == inputProductName
+    }
+
+    def "should accept a product brand to create a Product"() {
+        given:
+        def inputBrand = "Apple"
+        def inputProductName = "iPencil"
+        Product applePencilProduct = new Product(inputBrand, inputProductName)
+
+        when:
+        def actualBrand = applePencilProduct.getBrand()
+
+        then:
+        actualBrand == inputBrand
     }
 }
