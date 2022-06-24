@@ -1,14 +1,18 @@
+package com.tesco.ddd.domain
+
 import spock.lang.Specification
 
 class ProductSpec extends Specification {
-    def "length of Spock's and his friends' names"() {
-        expect:
-        name.size() == length
 
-        where:
-        name     | length
-        "Spock"  | 5
-        "Kirk"   | 4
-        "Scotty" | 6
+    def "should accept a product name to create a Product"() {
+        given:
+        def inputProductName = "Apple iPencil"
+        Product applePencilProduct = new Product(inputProductName)
+
+        when:
+        def actualProductName = applePencilProduct.getName()
+
+        then:
+        actualProductName == inputProductName
     }
-}  
+}
