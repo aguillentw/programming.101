@@ -3,11 +3,11 @@ plugins {
     id 'groovy'
 }
 
-group 'com.tesco.ddd'
+group 'com.thoughtworks.programming'
 version '1.0-SNAPSHOT'
 
 ext {
-    javaMainClass = "com.tesco.ddd.application.Application"
+    javaMainClass = "com.thoughtworks.programming.application.Application"
 }
 
 application {
