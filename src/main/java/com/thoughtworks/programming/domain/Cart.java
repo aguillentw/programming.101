@@ -1,4 +1,4 @@
-package com.tesco.ddd.domain;
+package com.thoughtworks.programming.domain;
 
 import java.util.ArrayList;
 import java.util.List;

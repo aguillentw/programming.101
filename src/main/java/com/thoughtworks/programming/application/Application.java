@@ -1,4 +1,4 @@
-package com.tesco.ddd.application;
+package com.thoughtworks.programming.application;
 
 public class Application {
 

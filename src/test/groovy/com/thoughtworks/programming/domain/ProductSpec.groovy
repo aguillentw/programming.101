@@ -1,4 +1,4 @@
-package com.tesco.ddd.domain
+package com.thoughtworks.programming.domain
 
 import spock.lang.Specification
 

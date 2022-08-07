@@ -1,4 +1,4 @@
-package com.tesco.ddd.domain;
+package com.thoughtworks.programming.domain;
 
 public class Product {
     private String name;
